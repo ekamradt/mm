@@ -36,7 +36,7 @@ java -jar ${HOME}/git/movemedical/target/movemedical-0.0.1-SNAPSHOT.jar
 
 * List records in a hierarchy: List records within a level of the hierarchy, for a given parent node.
 
-**Will list requeted object, plus children.**
+**Will list requested object, plus children.**
 
 * Delete records in a hierarchy: ◦ Delete a given node and any child nodes (and their child nodes and so on), if it has any.
 
