@@ -29,6 +29,12 @@ curl -d '{ "stateCode":"AZ", "stateName":"Arizona" }' \
 
 echo ""
 echo ""
+curl -d '{ "stateCode":"AZ", "stateName":"Arizona" }' \
+      -H "Content-Type: application/json" \
+      -X POST http://localhost:8080/api/createState
+
+echo ""
+echo ""
 curl http://localhost:8080/api/findAllStates
 
 echo ""

@@ -1,13 +1,12 @@
 package com.example.movemedical.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.EqualsAndHashCode;
 
 import javax.persistence.*;
 import java.util.List;
+import java.util.Set;
 
 @Entity
-@EqualsAndHashCode
 public class UsState {
 
     @Id
@@ -24,12 +23,12 @@ public class UsState {
             orphanRemoval = true,
             fetch = FetchType.EAGER
     )
-    private List<UsCounty> counties;
+    private Set<UsCounty> counties;
 
     protected UsState() {
     }
 
-    public UsState(String stateCode, String stateName, List<UsCounty> counties) {
+    public UsState(String stateCode, String stateName, Set<UsCounty> counties) {
         this.stateCode = stateCode;
         this.stateName = stateName;
         this.counties = counties;
@@ -60,7 +59,7 @@ public class UsState {
         return stateName;
     }
 
-    public List<UsCounty> getCounties() {
+    public Set<UsCounty> getCounties() {
         return counties;
     }
 

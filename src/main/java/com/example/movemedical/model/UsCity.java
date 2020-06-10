@@ -7,7 +7,6 @@ import lombok.EqualsAndHashCode;
 import javax.persistence.*;
 
 @Entity
-@EqualsAndHashCode
 public class UsCity {
 
     @Id
