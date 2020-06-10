@@ -28,7 +28,7 @@ java -jar ${HOME}/git/movemedical/target/movemedical-0.0.1-SNAPSHOT.jar
 
 * Allow duplicate records in the same request but only store one copy [remove duplicates]
 
-**Input are based on a Set, so this is automatic.** 
+**Input is based on a Set, so this is automatic.** 
         
 * Return an error if the node name already exists from a prior service call that created it._
 
